@@ -9,8 +9,9 @@ def follow(file:str) -> str:
             continue
         yield line
 
+if __name__=="__main__":
 
-fp = open('log.txt')
+    fp = open('log.txt')
 
-for line in follow(fp):
-    print(line)
+    for line in follow(fp):
+        print(line)
